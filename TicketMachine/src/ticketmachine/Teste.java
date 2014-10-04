@@ -6,7 +6,7 @@ public class Teste {
 * Caio Remedio
 * Larissa Rayane
 * Thalita Silva
-* 
+* TESTE
 *  Comentarios:
 * Não deveria ser permitido instancia o papelMoeda e definir a quantidade.
 * A quantidade de papel moeda deveria ser incrementada quando o cliente depositada uma quantia na máquina
