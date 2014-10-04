@@ -6,6 +6,9 @@ public class Teste {
 * Caio Remedio
 * Larissa Rayane
 * Thalita Silva
+* Júlia Vilarindo Fuzetti
+* Katarina Andrade
+*
 * 
 *  Comentarios:
 * Não deveria ser permitido instancia o papelMoeda e definir a quantidade.
