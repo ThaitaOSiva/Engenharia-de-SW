@@ -16,7 +16,7 @@ public class TicketMachine {
     
     
 
-     TicketMachine(int valor) {
+     TicketMachine(int valor) { 
         this.valorBilhete = valor;
         this.saldo = 0;
     }
