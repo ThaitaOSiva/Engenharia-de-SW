@@ -10,7 +10,7 @@ import java.util.Iterator;
 import javax.swing.JOptionPane;
 
 
-public final class TicketMachine {
+public final class TicketMachine{
 
     protected int valor;
     protected int saldo;

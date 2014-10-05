@@ -8,10 +8,8 @@ package ticketmachine;
  
 import java.util.Iterator;
 
-
 class Troco {
-                                                
-
+    
     protected PapelMoeda[] papeisMoeda;
     
     public Troco(){

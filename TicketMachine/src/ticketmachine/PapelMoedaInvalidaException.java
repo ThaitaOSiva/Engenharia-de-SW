@@ -8,7 +8,7 @@ package ticketmachine;
 
  
 public class PapelMoedaInvalidaException extends Exception {
-    private String mensagem;
+   private String mensagem;
     
    public  PapelMoedaInvalidaException() {
     mensagem = "Moeda Inválida";

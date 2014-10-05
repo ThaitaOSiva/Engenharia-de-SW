@@ -6,7 +6,7 @@
 
 package ticketmachine;
 
-    
+
 public class SaldoInsuficienteException extends Exception {
     
 }
