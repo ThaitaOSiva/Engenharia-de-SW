@@ -56,10 +56,6 @@ class Troco {
     }
     */
 
-    public Iterator<PapelMoeda> getIterator() {
-        return new TrocoIterator(this);
-    }
-
     class TrocoIterator implements Iterator<PapelMoeda> {
 
         protected Troco troco;

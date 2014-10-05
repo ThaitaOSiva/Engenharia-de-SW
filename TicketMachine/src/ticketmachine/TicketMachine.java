@@ -7,6 +7,7 @@
 package ticketmachine;
 
 import java.util.Iterator;
+import javax.swing.JOptionPane;
 
 
 public final class TicketMachine {
@@ -15,6 +16,7 @@ public final class TicketMachine {
     protected int saldo;
     protected int[] papelMoeda = {2, 5, 10, 20, 50, 100};
     protected Troco troco;
+    protected double valorBilhete;
     private TicketMachine instance = null; //Singleton
     
     private TicketMachine(int valor){
@@ -26,16 +28,23 @@ public final class TicketMachine {
             return instance = new TicketMachine(valor);
         return instance;
     }
-    public void inserir(int quantia) throws PapelMoedaInvalidaException{
-        boolean achou = false;
-        for(int i = 0; i < papelMoeda.length && !achou; i++){
-            if(papelMoeda[i] == quantia)             //O correto deveria ser papelMoeda[i], 
-                achou = true;                        // pois ele não está procurando se a nota aceita, 
-        }                                            //nesse caso apenas a nota de 5 é aceita pela máquina.
-        if (!achou)
-            throw new PapelMoedaInvalidaException();
-        this.saldo += quantia;
+    public void inserir(PapelMoeda papelMoeda) throws PapelMoedaInvalidaException {
+        int aux = 0;
+        String confirmacao;
+        aux = papelMoeda.getValor();
+        if (aux < valorBilhete) {
+            confirmacao = JOptionPane.showInputDialog("O valor inserido é menor que o do valor do bilhete. Deseja realizar outra inserção?");
+            if (confirmacao.equalsIgnoreCase("Sim")) {
+                inserir(papelMoeda);
+            } else {
+                System.exit(0);
+            }
+
+        } else {
+            saldo = saldo + aux;
+        }
     }
+
     public int getSaldo() {
         return saldo;
     }
