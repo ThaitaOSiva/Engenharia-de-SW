@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package ticketmachine;
+package ticketmachine; 
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

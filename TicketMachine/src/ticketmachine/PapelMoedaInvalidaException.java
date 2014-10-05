@@ -6,7 +6,7 @@
 
 package ticketmachine;
 
-
+ 
 public class PapelMoedaInvalidaException extends Exception {
     private String mensagem;
     
