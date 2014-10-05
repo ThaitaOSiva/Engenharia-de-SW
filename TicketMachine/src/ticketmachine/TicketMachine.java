@@ -59,7 +59,7 @@ public final class TicketMachine {
                 t = valor - papelMoeda[i];
         }
         return t;
-    }   
+    }
 
     public String imprimir() throws SaldoInsuficienteException {
         if(saldo < valor)

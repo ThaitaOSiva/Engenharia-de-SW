@@ -11,7 +11,7 @@ public class PapelMoedaInvalidaException extends Exception {
     private String mensagem;
     
    public  PapelMoedaInvalidaException() {
-    mensagem= "Moeda Inválida";
+    mensagem = "Moeda Inválida";
     }
     
     @Override

@@ -8,7 +8,7 @@ public class Teste {
 * Thalita Silva 
 * Júlia Vilarindo Fuzetti
 * Katarina Andrade
-*teste
+* teste
 * 
 *  Comentarios:
 * Não deveria ser permitido instancia o papelMoeda e definir a quantidade.

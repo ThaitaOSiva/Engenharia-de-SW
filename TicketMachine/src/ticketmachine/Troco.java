@@ -14,10 +14,12 @@ class Troco {
 
     protected PapelMoeda[] papeisMoeda;
     
-    public Troco() {}
+    public Troco(){
+    
+    }
     
     public double getTroco() {
-   return 0;
+        return 0;
     }
     
 

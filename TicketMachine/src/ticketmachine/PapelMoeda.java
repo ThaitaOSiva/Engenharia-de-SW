@@ -18,8 +18,8 @@ public class PapelMoeda {
     public PapelMoeda(int valor) throws PapelMoedaInvalidaException {
         //this.valor = valor;
         if ((valor == 2) || (valor == 5) || (valor == 10) || (valor==20) || (valor == 100)){
-        this.valor = valor;
-    }
+            this.valor = valor;
+        }
         else
           throw new PapelMoedaInvalidaException();
     }
